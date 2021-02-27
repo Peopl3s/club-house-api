@@ -179,10 +179,6 @@ class ClubHouse():
 class ClubHouseApiMethod():
     """
     Allows you to access API methods via:
-
-    >>> ch = ClubHouseApiMethod (...)
-    >>> ch.labels.Get(....)
-    or
     >>> ch.labels.get(...)
     """
     __slots__ = ('_clubhouse', '_method')

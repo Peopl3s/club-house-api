@@ -12,7 +12,7 @@
 
 ## Installation
 
-Install the current version with PyPI:
+Install the current version with [PyPI](https://pypi.org/project/clubhouse-api/):
 
 ```python
 pip install clubhouse_api

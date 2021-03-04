@@ -45,6 +45,7 @@ Create a new Story in the first Project that is returned from the API in the all
 ```python
 from club_house_api import ClubHouse
 import asyncio
+import os
 
 TOKEN = os.getenv('API_TOKEN')
 

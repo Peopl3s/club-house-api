@@ -28,16 +28,40 @@ pip install https://github.com/Peopl3s/club-house-api/archive/main.zip
 You can generate a token for clubhouse by going to the account section and generating a new token
 
 ```python
-Clubhouse.default_client = Clubhouse::Client.new('YOUR_TOKEN_HERE')
+TOKEN = os.getenv('TOKEN')
+
+club_house_session = ClubHouse(TOKEN, 'v3')
+club_house = club_house_session.get_api()
 ```
 
-Now we are ready to start creating stories. In its basic form this is how you create a story
+## Example
 
-This will create a new story in the first project that is returned from the API in the all projects request.
+Create a new Story in the first Project that is returned from the API in the all projects list.
 
-```ruby
-story = Clubhouse::Story.new(name:'My Story', project_id: Clubhouse::Project.all.first.id)
-story.save
+*If you installed a module from PyPi, you should to import it like this: ``` from clubhouse_api import ClubHouse ```*
+
+*If from GitHub or source: ``` from club_house_api import ClubHouse ```*
+
+```python
+from club_house_api import ClubHouse
+import asyncio
+
+TOKEN = os.getenv('API_TOKEN')
+
+club_house_session = ClubHouse(TOKEN, 'v3')
+club_house = club_house_session.get_api()
+
+async def main():
+
+    all_projects = await club_house.projects()
+    first_project_id = all_projects[0]['id']
+
+    new_story = {'name': 'My new story', 'project_id': first_project_id}
+    story = await club_house.stories.create(**new_story)
+    print(story)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
 ```
 
 You can check out all the docs with examples [here](docs)

@@ -20,7 +20,7 @@ pip install clubhouse_api
 
 Or from Github:
 ```python
-pip install https://github.com/Peopl3s/club-house-api/archive/master.zip
+pip install https://github.com/Peopl3s/club-house-api/archive/main.zip
 ```
 
 And then execute:

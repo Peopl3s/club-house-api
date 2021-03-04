@@ -23,23 +23,11 @@ Or from Github:
 pip install https://github.com/Peopl3s/club-house-api/archive/main.zip
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install clubhouse.io-ruby
-
 ## Usage
-
-### Setting up a client
-
-Before we start its best to setup a default client if you are just using it with only one token.
 
 You can generate a token for clubhouse by going to the account section and generating a new token
 
-```ruby
+```python
 Clubhouse.default_client = Clubhouse::Client.new('YOUR_TOKEN_HERE')
 ```
 
@@ -52,7 +40,7 @@ story = Clubhouse::Story.new(name:'My Story', project_id: Clubhouse::Project.all
 story.save
 ```
 
-You can check out all the other docs on other resources with examples [here](docs)
+You can check out all the docs with examples [here](docs)
 
 * [Epics](docs/epics.md)
 * [Files](docs/files.md)
@@ -74,6 +62,6 @@ Bug reports and/or pull requests are welcome
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT)
+The module is available as open source under the terms of the [Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0)
 
 

@@ -76,7 +76,9 @@ You can check out all the docs with examples [here](docs)
 * [Stories](docs/stories.md)
   * [Comments](docs/comments.md)
   * [Tasks](docs/tasks.md)
-* [Users](docs/users.md)
+  * [Reactions](docs/reactions.md)
+* [Members](docs/members.md)
+* [Teams](docs/teams.md)
 * [Workflows](docs/workflows.md)
 
 

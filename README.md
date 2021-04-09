@@ -14,12 +14,12 @@
 
 Install the current version with [PyPI](https://pypi.org/project/clubhouse-api/):
 
-```python
+```bash
 pip install clubhouse_api
 ```
 
 Or from Github:
-```python
+```bash
 pip install https://github.com/Peopl3s/club-house-api/archive/main.zip
 ```
 
